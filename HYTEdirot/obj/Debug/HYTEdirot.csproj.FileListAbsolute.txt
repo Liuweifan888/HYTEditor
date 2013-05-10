@@ -1,0 +1,12 @@
+D:\Desktop\HYTEdirot\HYTEdirot\bin\Debug\HYTEdirot.exe.config
+D:\Desktop\HYTEdirot\HYTEdirot\bin\Debug\HYTEdirot.exe
+D:\Desktop\HYTEdirot\HYTEdirot\bin\Debug\HYTEdirot.pdb
+D:\Desktop\HYTEdirot\HYTEdirot\obj\Debug\HYTEdirot.csprojResolveAssemblyReference.cache
+D:\Desktop\HYTEdirot\HYTEdirot\obj\Debug\HYTEdirot.FormMain.resources
+D:\Desktop\HYTEdirot\HYTEdirot\obj\Debug\HYTEdirot.Properties.Resources.resources
+D:\Desktop\HYTEdirot\HYTEdirot\obj\Debug\HYTEdirot.csproj.GenerateResource.Cache
+D:\Desktop\HYTEdirot\HYTEdirot\obj\Debug\HYTEdirot.exe
+D:\Desktop\HYTEdirot\HYTEdirot\obj\Debug\HYTEdirot.pdb
+D:\Desktop\HYTEdirot\HYTEdirot\obj\Debug\HYTEdirot.FormAdd.resources
+D:\Desktop\HYTEdirot\HYTEdirot\bin\Debug\geckofx-core-18.pdb
+D:\Desktop\HYTEdirot\HYTEdirot\bin\Debug\Geckofx-Winforms-18.pdb

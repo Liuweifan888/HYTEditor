@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>产品编辑</title>
+	<meta charset="utf-8">
+    <style>
+        /* Once an editable element gets focused, the "cke_focus" class is added to it, so we can style it differently. */
+        div {font:400 12px "宋体" }
+        .cke_editable.cke_editable_inline.cke_focus {
+            box-shadow: inset 0px 0px 20px 3px #ddd, inset 0 0 1px #000;
+            outline: none;
+            background: #eee;
+            cursor: text;
+        }
+    </style>
+    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var json;
+            json = parent.GetValue();
+            //alert(json.content+"  "+json.width+"  "+json.height)
+            $("#edit").html(json.content);
+            $("#edit").width(json.width);
+            $("#edit").height(json.height);
+        });
+    </script>
+</head>
+<body style="margin:0 auto;padding:0">
+<div id="EditBox" style="margin:0 auto;">
+    <div style="height:45px;"></div>
+    <div id="edit" contenteditable="true" style="background-color:#ffffff;margin:0 auto; border:solid 1px #808080;overflow:hidden">aaa</div>
+</div>
+</body>
+</html>

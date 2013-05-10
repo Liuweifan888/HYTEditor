@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>产品编辑</title>
+	<meta charset="utf-8">
+    <style>
+        div {font:400 12px "宋体" }
+    </style>
+    <link rel="stylesheet" type="text/css" href="js/blackbox.css" media="screen" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.blackbox.js"></script>
+    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+    <script type="text/javascript">
+
+        var json;
+
+        function alertbox(ID) {
+            var box = new BlackBox();
+            
+            var DivWidth, DivHeight;
+            DivWidth = $("#" + ID).width();
+            DivHeight = $("#" + ID).height();
+            json = { "content": $("#" + ID).html(), "width": DivWidth, "height": DivHeight };
+            //alert(DivWidth+100);
+            box.popup('<div id="EditBox" style="width:' + (DivHeight > 300 ? 643 : 623) + 'px;height:' + (DivHeight > 300 ? 410 : DivHeight + 110) + 'px;"><iframe id="EditFrame" src="edit.html" style="width:' + (DivHeight > 300 ? 643 : 623) + 'px;height:' + (DivHeight > 300 ? 360 : DivHeight + 60) + 'px;border:0;background-color:#cccccc"></iframe><div id="BlackBoxAction"><button class="submit" id="close">取消</button><button class="submit" id="submit">确定</button></div></div>',
+            function (content) {
+                content.find("#submit").click(function () {
+                    //alert();
+                    $("#" + ID).html($("#EditFrame").contents().find("#edit").html());
+                    box.boxClose();
+                });
+                content.find("#close").click(function () {
+                    box.boxClose();
+                });
+            });
+        }
+        
+        function GetValue() {
+            //json = { "content": "aaaaaa", "width": "man", "height":"100"};
+            return json;
+        }
+            $("div").click(function () {
+                alert(this.id);
+            });
+    </script>
+</head>
+<body style="margin:0 auto;padding:0">
+<div id="Product" style="width:750px; margin:0 auto;padding:0;">
+<!--    <div id="Img_1" style="background:url(http://image.huiyuanti.com/ProductInfo/baohuke/Apple/iPhone4_4S/liyu/hong/02.jpg);width:750px;height:425px;margin:0 auto;padding:0px;">
+        <div id="Div_1" style="position:relative;left:80px;top: 20px;width:200px;height:200px;margin:0;padding:0;border: solid 1px #E0AE00">
+        </div>
+    </div>-->
+</div>
+
+</body>
+<!--   <script> alertbox("Div_1");</script>-->
+</html>
